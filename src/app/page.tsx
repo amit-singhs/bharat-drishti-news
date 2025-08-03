@@ -6,6 +6,8 @@ import { Separator } from "@/components/ui/separator";
 import { dummyArticles, type Article } from "@/lib/data";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 
 function ArticleCardSmall({ article }: { article: Article }) {
   return (
@@ -41,7 +43,12 @@ export default function Home() {
   const topStoriesLeft = dummyArticles.slice(1, 3);
   const featuredArticle = dummyArticles[3];
   const opinionArticles = dummyArticles.slice(4, 10);
-  const secondaryStories = dummyArticles.slice(10);
+  
+  const fromThePostSection = dummyArticles.slice(10, 14);
+  const opinionsSection = dummyArticles.slice(14, 18);
+  const mostReadSection = dummyArticles.slice(18, 23);
+  const moreStories = dummyArticles.slice(23);
+
 
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground">
@@ -91,10 +98,13 @@ export default function Home() {
         
         <Separator className="my-8"/>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {secondaryStories.map((article) => (
+        {/* From The Post Section */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold font-headline mb-4">पोस्ट से</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {fromThePostSection.map((article) => (
               <div key={article.id} className="group">
-                 <Link href={`/article/${article.id}`} className="block">
+                <Link href={`/article/${article.id}`}>
                   <Image
                     src={article.imageUrl}
                     alt={article.headline}
@@ -103,15 +113,82 @@ export default function Home() {
                     className="w-full h-auto object-cover"
                     data-ai-hint={article.imageHint}
                   />
-                  </Link>
                   <p className="text-sm font-bold mt-2 text-primary">{article.category}</p>
-                  <Link href={`/article/${article.id}`} className="font-headline text-xl font-bold leading-tight mt-1 group-hover:underline">
-                     {article.headline}
-                  </Link>
-                  <p className="text-xs text-muted-foreground mt-2 font-medium">{article.author}</p>
+                  <h3 className="text-xl font-headline font-bold mt-1 group-hover:underline">{article.headline}</h3>
+                </Link>
               </div>
             ))}
-        </div>
+          </div>
+        </section>
+
+        <Separator className="my-8" />
+        
+        {/* Opinions Section */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold font-headline mb-4">राय</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {opinionsSection.map((article) => (
+              <div key={article.id} className="group flex flex-col">
+                <div className="flex items-center gap-3 mb-2">
+                  <Image src={article.authorImage!} alt={article.author} width={40} height={40} className="rounded-full" />
+                  <p className="font-bold text-sm">{article.author}</p>
+                </div>
+                <Link href={`/article/${article.id}`}>
+                  <h3 className="text-lg font-headline font-bold group-hover:underline">{article.headline}</h3>
+                </Link>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <Separator className="my-8" />
+        
+        {/* Most Read Section */}
+        <section>
+          <h2 className="text-2xl font-bold font-headline mb-4">सबसे ज़्यादा पढ़ा गया</h2>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="lg:col-span-2">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    {moreStories.slice(0, 4).map((article) => (
+                        <div key={article.id} className="group">
+                           <Link href={`/article/${article.id}`} className="block">
+                            <Image
+                              src={article.imageUrl}
+                              alt={article.headline}
+                              width={400}
+                              height={250}
+                              className="w-full h-auto object-cover"
+                              data-ai-hint={article.imageHint}
+                            />
+                            </Link>
+                            <p className="text-sm font-bold mt-2 text-primary">{article.category}</p>
+                            <Link href={`/article/${article.id}`} className="font-headline text-xl font-bold leading-tight mt-1 group-hover:underline">
+                               {article.headline}
+                            </Link>
+                             <p className="text-sm text-muted-foreground mt-1">{article.summary}</p>
+                            <p className="text-xs text-muted-foreground mt-2 font-medium">{article.author}</p>
+                        </div>
+                      ))}
+                </div>
+            </div>
+            <aside>
+                <Card>
+                    <CardContent className="p-4">
+                        <h3 className="font-bold font-headline text-lg mb-3">शीर्ष 5</h3>
+                        <ol className="list-decimal list-inside space-y-3">
+                            {mostReadSection.map((article) => (
+                                <li key={article.id} className="font-headline text-base hover:underline">
+                                    <Link href={`/article/${article.id}`}>{article.headline}</Link>
+                                </li>
+                            ))}
+                        </ol>
+                    </CardContent>
+                </Card>
+            </aside>
+          </div>
+        </section>
+
+
       </main>
       <Footer />
     </div>
