@@ -12,7 +12,7 @@ import { Badge } from "@/components/ui/badge";
 function ArticleCardSmall({ article }: { article: Article }) {
   return (
     <div className="group">
-       <Link href={`/article/${article.id}`}>
+      <Link href={`/article/${article.id}`}>
         {article.imageUrl && (
           <Image
             src={article.imageUrl}
@@ -59,7 +59,7 @@ export default function Home() {
   const fromThePostSection = dummyArticles.slice(10, 14);
   const opinionsSection = dummyArticles.slice(14, 18);
   const mostReadSection = dummyArticles.slice(18, 23);
-  const moreStories = dummyArticles.slice(23);
+  const moreStories = dummyArticles.slice(23, 31);
 
 
   return (
@@ -70,7 +70,7 @@ export default function Home() {
           {/* Left Column */}
           <div className="col-span-12 md:col-span-3 space-y-6">
             {topStoriesLeft.map((article) => (
-              <ArticleCardSmall key={article.id} article={article} />
+               <ArticleCardSmall key={article.id} article={article} />
             ))}
           </div>
 
@@ -161,7 +161,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    {moreStories.slice(0, 6).map((article) => (
+                    {moreStories.map((article) => (
                         <div key={article.id} className="group">
                            <Link href={`/article/${article.id}`} className="block">
                             <Image
@@ -184,7 +184,7 @@ export default function Home() {
                 </div>
             </div>
             <aside>
-                <Card>
+                <Card className="h-full">
                     <CardContent className="p-4">
                         <h3 className="font-bold font-headline text-lg mb-3">शीर्ष 5</h3>
                         <ol className="list-decimal list-inside space-y-3">

@@ -296,5 +296,60 @@ export const dummyArticles: Article[] = [
     author: 'पोषण समाचार',
     date: '6 जुलाई, 2024',
     authorImage: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1974&auto=format&fit=crop"
+  },
+  {
+    id: '27',
+    category: 'तकनीक',
+    headline: '5जी कनेक्टिविटी का भविष्य और हमारे जीवन पर इसका प्रभाव',
+    summary: 'विशेषज्ञों का कहना है कि 5जी तकनीक समाज के हर पहलू में क्रांति लाएगी।',
+    imageUrl: 'https://images.unsplash.com/photo-1589463203954-a0352528734e?q=80&w=1964&auto=format&fit=crop',
+    imageHint: '5g technology',
+    author: 'टेक क्रॉनिकल्स',
+    date: '5 जुलाई, 2024',
+    authorImage: "https://images.unsplash.com/photo-1542206395-9feb3edaa68d?q=80&w=1974&auto=format&fit=crop"
+  },
+  {
+    id: '28',
+    category: 'व्यापार',
+    headline: 'गिग इकोनॉमी का उदय और पारंपरिक रोजगार पर इसका प्रभाव',
+    summary: 'अधिक लोग लचीले काम के लिए फ्रीलांसिंग और स्वतंत्र अनुबंध की ओर रुख कर रहे हैं।',
+    imageUrl: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=1974&auto=format&fit=crop',
+    imageHint: 'freelance work',
+    author: 'बिजनेस इनसाइडर',
+    date: '4 जुलाई, 2024',
+    authorImage: "https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=2071&auto=format&fit=crop"
+  },
+  {
+    id: '29',
+    category: 'विश्व',
+    headline: 'वैश्विक नेता जलवायु परिवर्तन पर कार्रवाई के लिए शिखर सम्मेलन में एकत्रित हुए',
+    summary: 'पेरिस में होने वाली बैठक का उद्देश्य ग्रीनहाउस गैस उत्सर्जन को कम करने के लिए प्रतिबद्धताओं को मजबूत करना है।',
+    imageUrl: 'https://images.unsplash.com/photo-1498624237839-a6e5bce4579c?q=80&w=2070&auto=format&fit=crop',
+    imageHint: 'climate summit',
+    author: 'रॉयटर्स',
+    date: '3 जुलाई, 2024',
+    authorImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop"
+  },
+  {
+    id: '30',
+    category: 'विज्ञान',
+    headline: 'मंगल ग्रह पर उपनिवेशीकरण की दौड़: चुनौतियां और अवसर',
+    summary: 'नासा और स्पेसएक्स लाल ग्रह पर मनुष्यों को भेजने की महत्वाकांक्षी योजनाओं के साथ आगे बढ़ रहे हैं।',
+    imageUrl: 'https://images.unsplash.com/photo-1610221974332-9457d5448373?q=80&w=2070&auto=format&fit=crop',
+    imageHint: 'mars colonization',
+    author: 'स्पेस.कॉम',
+    date: '2 जुलाई, 2024',
+    authorImage: "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=1978&auto=format&fit=crop"
+  },
+  {
+    id: '31',
+    category: 'संस्कृति',
+    headline: 'स्ट्रीमिंग सेवाओं का उदय और फिल्म उद्योग पर उनका प्रभाव',
+    summary: 'नेटफ्लिक्स, डिज़्नी+ और अन्य प्लेटफ़ॉर्म मनोरंजन परिदृश्य को नया आकार दे रहे हैं।',
+    imageUrl: 'https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?q=80&w=2070&auto=format&fit=crop',
+    imageHint: 'streaming service',
+    author: 'वैराइटी',
+    date: '1 जुलाई, 2024',
+    authorImage: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1974&auto=format&fit=crop"
   }
 ];
