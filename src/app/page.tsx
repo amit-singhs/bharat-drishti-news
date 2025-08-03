@@ -18,7 +18,7 @@ const dummyArticles: Article[] = [
     headline: "ऐतिहासिक क्षण: भारत ने अंतरिक्ष में नया कीर्तिमान स्थापित किया",
     summary:
       "भारतीय अंतरिक्ष अनुसंधान संगठन (इसरो) ने आज एक और बड़ी सफलता हासिल की, जब उसके नवीनतम संचार उपग्रह को सफलतापूर्वक कक्षा में स्थापित किया गया।",
-    imageUrl: "https://placehold.co/1200x600",
+    imageUrl: "https://placehold.co/1200x600.png",
     imageHint: "space rocket",
     author: "विज्ञान संवाददाता",
     date: "24 जुलाई, 2024",
@@ -29,7 +29,7 @@ const dummyArticles: Article[] = [
     headline: "शेयर बाजार में रिकॉर्ड तेजी, निवेशकों में उत्साह का माहौल",
     summary:
       "सकारात्मक वैश्विक संकेतों और मजबूत घरेलू आर्थिक आंकड़ों के दम पर आज भारतीय शेयर बाजार ने नई ऊंचाइयों को छू लिया।",
-    imageUrl: "https://placehold.co/400x300",
+    imageUrl: "https://placehold.co/400x300.png",
     imageHint: "stock market",
     author: "व्यापार डेस्क",
     date: "24 जुलाई, 2024",
@@ -40,7 +40,7 @@ const dummyArticles: Article[] = [
     headline: "क्रिकेट विश्व कप: भारत ने फाइनल में बनाई जगह",
     summary:
       "एक रोमांचक सेमीफाइनल मुकाबले में शानदार प्रदर्शन करते हुए भारतीय क्रिकेट टीम ने विश्व कप के फाइनल में प्रवेश कर लिया है।",
-    imageUrl: "https://placehold.co/400x300",
+    imageUrl: "https://placehold.co/400x300.png",
     imageHint: "cricket stadium",
     author: "खेल डेस्क",
     date: "23 जुलाई, 2024",
@@ -51,7 +51,7 @@ const dummyArticles: Article[] = [
     headline: "नई 5G तकनीक का अनावरण, बदलेगी इंटरनेट की दुनिया",
     summary:
       "आज एक प्रमुख प्रौद्योगिकी कंपनी ने अपनी अगली पीढ़ी की 5G तकनीक का प्रदर्शन किया, जिससे डेटा स्पीड में अभूतपूर्व वृद्धि का वादा किया गया है।",
-    imageUrl: "https://placehold.co/400x300",
+    imageUrl: "https://placehold.co/400x300.png",
     imageHint: "5g tower",
     author: "टेक गुरु",
     date: "23 जुलाई, 2024",
@@ -62,7 +62,7 @@ const dummyArticles: Article[] = [
     headline: "आगामी बॉलीवुड फिल्म का ट्रेलर रिलीज, प्रशंसकों में उत्सुकता",
     summary:
       "बहुप्रतीक्षित बॉलीवुड फिल्म का ट्रेलर आज जारी किया गया, जिसने सोशल मीडिया पर धूम मचा दी है और प्रशंसक इसकी रिलीज का बेसब्री से इंतजार कर रहे हैं।",
-    imageUrl: "https://placehold.co/400x300",
+    imageUrl: "https://placehold.co/400x300.png",
     imageHint: "movie theater",
     author: "फिल्म समीक्षक",
     date: "22 जुलाई, 2024",
@@ -73,7 +73,7 @@ const dummyArticles: Article[] = [
     headline: "मानसून में स्वास्थ्य: विशेषज्ञों द्वारा जारी की गई नई गाइडलाइन्स",
     summary:
       "स्वास्थ्य मंत्रालय ने मानसून के मौसम में बीमारियों से बचाव के लिए नए दिशा-निर्देश जारी किए हैं, जिसमें स्वच्छता और खान-पान पर विशेष ध्यान देने की सलाह दी गई है।",
-    imageUrl: "https://placehold.co/400x300",
+    imageUrl: "https://placehold.co/400x300.png",
     imageHint: "healthy food",
     author: "स्वास्थ्य रिपोर्टर",
     date: "22 जुलाई, 2024",
