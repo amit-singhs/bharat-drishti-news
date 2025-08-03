@@ -280,7 +280,7 @@ export const dummyArticles: Article[] = [
     category: 'जीवनशैली',
     headline: 'धीमी यात्रा की कला: सार्थक अनुभवों के लिए दुनिया की खोज',
     summary: 'पर्यटन से परे जाकर स्थानीय संस्कृतियों और वातावरण से जुड़ें।',
-    imageUrl: 'https://images.unsplash.com/photo-1602765835989-b021fe3ed4f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzZWFyY2glMjBvZiUyMHRoZSUyMHdvcmxkfGVufDB8fHx8MTc1NDI0NTI2N3ww&ixlib=rb-4.1.0&q=80&w=1080',
+    imageUrl: 'https://images.unsplash.com/photo-1682686578023-dc680e7a3aeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxleHBsb3JhdGlvbnxlbnwwfHx8fDE3NTQyNDUzNjJ8MA&ixlib=rb-4.1.0&q=80&w=1080',
     imageHint: "slow travel",
     author: 'यात्रा + आराम',
     date: '7 जुलाई, 2024',
