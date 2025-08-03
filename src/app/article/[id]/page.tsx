@@ -3,6 +3,7 @@
 import { useParams } from 'next/navigation';
 import Image from "next/image";
 import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
 import { dummyArticles, type Article } from "@/lib/data";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Separator } from '@/components/ui/separator';
@@ -56,18 +57,18 @@ export default function ArticlePage() {
                 priority
               />
 
-              <div className="prose prose-lg max-w-none mx-auto text-foreground prose-p:text-lg prose-p:leading-relaxed prose-headings:font-headline">
+              <div className="prose prose-lg max-w-none mx-auto text-foreground prose-p:font-body prose-p:text-lg prose-p:leading-relaxed prose-headings:font-headline">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. 
+                  एक दूरस्थ गाँव में, पहाड़ों के बीच बसा, आरव नाम का एक युवा लड़का रहता था। वह अपनी जिज्ञासा और रोमांच की भावना के लिए जाना जाता था। एक दिन, गाँव के बुजुर्गों से प्राचीन कथाएँ सुनते हुए, उसे एक छिपे हुए झरने के बारे में पता चला जिसके बारे में कहा जाता है कि उसमें जादुई शक्तियाँ हैं।
                 </p>
                 <p>
-                  Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.
+                  इस खोज से उत्साहित होकर, आरव ने झरने को खोजने के लिए यात्रा पर निकलने का फैसला किया। उसने एक छोटा सा बैग भोजन, पानी और एक पुराने नक्शे के साथ पैक किया जो उसे अपने दादा से विरासत में मिला था। नक्शा फीका और फटा हुआ था, लेकिन इसमें प्राचीन प्रतीकों के साथ एक रहस्यमय निशान दिखाया गया था जो माना जाता था कि झरने की ओर ले जाता है।
                 </p>
                 <p>
-                  Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. 
+                  जैसे ही आरव घने जंगल में गया, उसे विभिन्न चुनौतियों का सामना करना पड़ा। उसने ऊंची चट्टानों पर चढ़ाई की, तेज बहने वाली नदियों को पार किया और अँधेरी, डरावनी गुफाओं से गुज़रा। रास्ते में, उसकी दोस्ती जंगल के कई जीवों से हुई - एक बुद्धिमान बूढ़ा उल्लू, एक चंचल गिलहरी और एक कोमल हिरण। उन्होंने उसे खतरनाक रास्तों पर मार्गदर्शन किया और उसे प्रेरित रखा।
                 </p>
                  <p>
-                  Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris.
+                  कई दिनों की यात्रा के बाद, आरव अंत में एक ऐसी समाशोधन पर पहुँचा जहाँ उसने पानी की तेज़ आवाज़ सुनी। उसने ध्वनि का पीछा किया और लम्बे, काई से ढके पेड़ों के पीछे छिपे हुए झरने को पाया। पानी एक ऊँची चट्टान से एक क्रिस्टल-स्पष्ट पूल में गिर रहा था, जो एक अलौकिक चमक से चमक रहा था। जैसे ही उसने पूल से पानी पिया, उसे ऊर्जा और जीवन शक्ति का एक उछाल महसूस हुआ जैसा उसने पहले कभी अनुभव नहीं किया था। उसे एहसास हुआ कि झरने का जादू उसकी चिकित्सा शक्तियों में नहीं था, बल्कि यात्रा में ही था - उसने जो सबक सीखे, उसने जो दोस्त बनाए और उसने जो ताकत अपने भीतर खोजी।
                 </p>
               </div>
             </article>
@@ -75,7 +76,7 @@ export default function ArticlePage() {
             <Separator className="my-12" />
             
             <section>
-              <h2 className="text-2xl font-bold font-headline mb-6">Related stories</h2>
+              <h2 className="text-2xl font-bold font-headline mb-6">संबंधित कहानियाँ</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {relatedArticles.map(related => (
                   <div key={related.id} className="group">
@@ -97,6 +98,7 @@ export default function ArticlePage() {
           </div>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }

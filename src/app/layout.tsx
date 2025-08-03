@@ -1,17 +1,23 @@
 import type { Metadata } from "next";
 import { Toaster } from "@/components/ui/toaster";
-import { Inter as FontSans } from 'next/font/google';
+import { Literata as FontBody, PT_Sans as FontHeadline } from 'next/font/google';
 import "./globals.css";
 import { cn } from "@/lib/utils";
 
-const fontSans = FontSans({
+const fontBody = FontBody({
   subsets: ['latin'],
-  variable: '--font-sans',
+  variable: '--font-body',
+});
+
+const fontHeadline = FontHeadline({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-headline',
 });
 
 export const metadata: Metadata = {
-  title: "The Studio Post",
-  description: "Democracy Dies in Darkness",
+  title: "भारत दृष्टि",
+  description: "लोकतंत्र अंधकार में मरता है",
 };
 
 export default function RootLayout({
@@ -20,17 +26,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="hi" suppressHydrationWarning>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
       </head>
-      <body className={cn("min-h-screen bg-background font-body antialiased", fontSans.variable)}>
+      <body className={cn("min-h-screen bg-background font-body antialiased", fontBody.variable, fontHeadline.variable)}>
         {children}
         <Toaster />
       </body>

@@ -6,16 +6,16 @@ import Link from "next/link";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 
 const navLinks = [
-  { name: "Politics", href: "#" },
-  { name: "Opinions", href: "#" },
-  { name: "Style", href: "#" },
-  { name: "Investigations", href: "#" },
-  { name: "Climate", href: "#" },
-  { name: "Well-Being", href: "#" },
-  { name: "Business", href: "#" },
-  { name: "Tech", href: "#" },
-  { name: "World", href: "#" },
-  { name: "Sports", href: "#" },
+  { name: "राजनीति", href: "#" },
+  { name: "विचार", href: "#" },
+  { name: "शैली", href: "#" },
+  { name: "जांच", href: "#" },
+  { name: "जलवायु", href: "#" },
+  { name: "कल्याण", href: "#" },
+  { name: "व्यापार", href: "#" },
+  { name: "तकनीक", href: "#" },
+  { name: "विश्व", href: "#" },
+  { name: "खेल", href: "#" },
 ];
 
 export function Header() {
@@ -29,7 +29,7 @@ export function Header() {
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon">
                   <Menu className="h-6 w-6" />
-                  <span className="sr-only">Open menu</span>
+                  <span className="sr-only">मेनू खोलें</span>
                 </Button>
               </SheetTrigger>
               <SheetContent side="left" className="w-[300px] sm:w-[400px]">
@@ -37,12 +37,12 @@ export function Header() {
                   <VisuallyHidden>Main Menu</VisuallyHidden>
                 </SheetTitle>
                 <SheetDescription>
-                  <VisuallyHidden>Navigation links for the website.</VisuallyHidden>
+                  <VisuallyHidden>वेबसाइट के लिए नेविगेशन लिंक।</VisuallyHidden>
                 </SheetDescription>
                 <div className="flex flex-col h-full p-4">
                   <div className="flex items-center space-x-2 mb-6">
                     <span className="text-2xl font-bold font-headline text-primary">
-                      The Studio Post
+                      भारत दृष्टि
                     </span>
                   </div>
                   <nav className="flex flex-col space-y-2">
@@ -61,22 +61,21 @@ export function Header() {
             </Sheet>
             <Button variant="ghost" size="icon">
               <Search className="h-5 w-5" />
-              <span className="sr-only">Search</span>
+              <span className="sr-only">खोज</span>
             </Button>
           </div>
 
           <div className="text-center">
-            <Link href="/" aria-label="Home page">
-              <h1 className="text-3xl md:text-4xl font-black font-headline text-foreground tracking-tighter">
-                The Studio Post
+            <Link href="/" aria-label="मुख पृष्ठ">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl font-black font-headline text-foreground tracking-tighter">
+                भारत दृष्टि
               </h1>
-              <p className="text-xs font-sans">Democracy Dies in Darkness</p>
             </Link>
           </div>
 
           <div className="flex items-center space-x-2">
-            <Button variant="default" size="sm" className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-5">Subscribe</Button>
-            <Button variant="ghost" size="sm" className="font-bold">Sign In</Button>
+            <Button variant="default" size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-5">सदस्यता लें</Button>
+            <Button variant="ghost" size="sm" className="font-bold">साइन इन करें</Button>
           </div>
         </div>
       </div>

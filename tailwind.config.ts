@@ -17,9 +17,9 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Roboto', 'sans-serif'],
-        headline: ['Merriweather', 'serif'],
-        body: ['Roboto', 'sans-serif'],
+        sans: ['var(--font-sans)', 'sans-serif'],
+        headline: ['var(--font-headline)', 'serif'],
+        body: ['var(--font-body)', 'serif'],
       },
       colors: {
         background: 'hsl(var(--background))',
@@ -123,6 +123,9 @@ export default {
              h4: {
              fontFamily: theme('fontFamily.headline'),
             },
+            p: {
+              fontFamily: theme('fontFamily.body'),
+            }
           },
         },
       }),

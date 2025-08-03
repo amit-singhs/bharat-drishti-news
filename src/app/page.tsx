@@ -1,8 +1,11 @@
 import Image from "next/image";
 import Link from 'next/link';
 import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
 import { Separator } from "@/components/ui/separator";
 import { dummyArticles, type Article } from "@/lib/data";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 function ArticleCardSmall({ article }: { article: Article }) {
   return (
@@ -74,7 +77,9 @@ export default function Home() {
           {/* Right Column (Opinions) */}
           <aside className="col-span-12 md:col-span-3 mt-6 md:mt-0">
              <h2 className="text-lg font-bold font-sans uppercase tracking-wider mb-4">
-              <Link href="#" className="hover:underline">Opinions &rarr;</Link>
+              <Link href="#" className="hover:underline flex items-center">
+                विचार <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
             </h2>
              <div className="space-y-6">
               {opinionArticles.map((article) => (
@@ -107,8 +112,8 @@ export default function Home() {
               </div>
             ))}
         </div>
-
       </main>
+      <Footer />
     </div>
   );
 }
