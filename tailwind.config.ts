@@ -17,9 +17,9 @@ export default {
     },
     extend: {
       fontFamily: {
-        body: ['Literata', 'serif'],
-        headline: ['"PT Sans"', 'sans-serif'],
-        code: ['monospace'],
+        sans: ['var(--font-sans)', 'system-ui', 'sans-serif'],
+        headline: ['Merriweather', 'serif'],
+        body: ['Roboto', 'sans-serif'],
       },
       colors: {
         background: 'hsl(var(--background))',

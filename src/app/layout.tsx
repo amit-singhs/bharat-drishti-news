@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import { Toaster } from "@/components/ui/toaster";
+import { Inter as FontSans } from 'next/font/google';
 import "./globals.css";
+import { cn } from "@/lib/utils";
+
+const fontSans = FontSans({
+  subsets: ['latin'],
+  variable: '--font-sans',
+});
 
 export const metadata: Metadata = {
   title: "धर्म राज (Dharma Raj)",
@@ -21,12 +28,9 @@ export default function RootLayout({
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap"
-          rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
       </head>
-      <body className="font-body antialiased">
+      <body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>
         {children}
         <Toaster />
       </body>
