@@ -28,6 +28,7 @@ function ArticleCardSmall({ article }: { article: Article }) {
         </h3>
       </Link>
       <p className="text-sm text-muted-foreground mt-1">{article.summary}</p>
+       <p className="text-xs text-muted-foreground mt-2 font-medium">{article.author}</p>
     </div>
   )
 }
@@ -160,7 +161,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    {moreStories.slice(0, 6).map((article) => (
+                    {moreStories.slice(0, 4).map((article) => (
                         <div key={article.id} className="group">
                            <Link href={`/article/${article.id}`} className="block">
                             <Image
