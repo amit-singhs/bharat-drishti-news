@@ -302,7 +302,7 @@ export const dummyArticles: Article[] = [
     category: 'तकनीक',
     headline: '5जी कनेक्टिविटी का भविष्य और हमारे जीवन पर इसका प्रभाव',
     summary: 'विशेषज्ञों का कहना है कि 5जी तकनीक समाज के हर पहलू में क्रांति लाएगी।',
-    imageUrl: 'https://images.unsplash.com/photo-1589463203954-a0352528734e?q=80&w=1964&auto=format&fit=crop',
+    imageUrl: 'https://images.unsplash.com/photo-1590896083082-3bc8f8188030?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMXx8bW9iaWxlJTIwdG93ZXJ8ZW58MHx8fHwxNzU0MjQ2NDYyfDA&ixlib=rb-4.1.0&q=80&w=1080',
     imageHint: '5g technology',
     author: 'टेक क्रॉनिकल्स',
     date: '5 जुलाई, 2024',
@@ -353,3 +353,5 @@ export const dummyArticles: Article[] = [
     authorImage: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1974&auto=format&fit=crop"
   }
 ];
+
+    
