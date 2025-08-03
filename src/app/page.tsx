@@ -43,7 +43,7 @@ function OpinionArticle({ article }: { article: Article }) {
         </Link>
       </div>
       {article.authorImage && (
-         <Image src={article.authorImage} alt={article.author} width={40} height={40} className="rounded-full flex-shrink-0"/>
+         <Image src={article.authorImage} alt={article.author} width={40} height={40} className="rounded-md flex-shrink-0"/>
       )}
     </div>
   );
@@ -142,7 +142,7 @@ export default function Home() {
             {opinionsSection.map((article) => (
               <div key={article.id} className="group flex flex-col">
                 <div className="flex items-center gap-3 mb-2">
-                  <Image src={article.authorImage!} alt={article.author} width={40} height={40} className="rounded-full" />
+                  <Image src={article.authorImage!} alt={article.author} width={40} height={40} className="rounded-md" />
                   <p className="font-bold text-sm">{article.author}</p>
                 </div>
                 <Link href={`/article/${article.id}`}>
@@ -161,7 +161,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    {moreStories.slice(0, 4).map((article) => (
+                    {moreStories.slice(0, 6).map((article) => (
                         <div key={article.id} className="group">
                            <Link href={`/article/${article.id}`} className="block">
                             <Image
