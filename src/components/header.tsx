@@ -1,8 +1,9 @@
 import { Menu, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from "@/components/ui/sheet";
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
+import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 
 const navLinks = [
   { name: "Politics", href: "#" },
@@ -32,6 +33,12 @@ export function Header() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="left" className="w-[300px] sm:w-[400px]">
+                <SheetTitle>
+                  <VisuallyHidden>Main Menu</VisuallyHidden>
+                </SheetTitle>
+                <SheetDescription>
+                  <VisuallyHidden>Navigation links for the website.</VisuallyHidden>
+                </SheetDescription>
                 <div className="flex flex-col h-full p-4">
                   <div className="flex items-center space-x-2 mb-6">
                     <span className="text-2xl font-bold font-headline text-primary">
