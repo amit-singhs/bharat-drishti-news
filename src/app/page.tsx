@@ -12,11 +12,22 @@ import { Badge } from "@/components/ui/badge";
 function ArticleCardSmall({ article }: { article: Article }) {
   return (
     <div className="group">
-      <Link href={`/article/${article.id}`} className="font-headline text-lg font-bold leading-tight group-hover:underline">
-          {article.headline}
+       <Link href={`/article/${article.id}`}>
+        {article.imageUrl && (
+          <Image
+            src={article.imageUrl}
+            alt={article.headline}
+            width={400}
+            height={250}
+            className="w-full h-auto object-cover"
+            data-ai-hint={article.imageHint}
+          />
+        )}
+        <h3 className="font-headline text-lg font-bold leading-tight group-hover:underline mt-2">
+            {article.headline}
+        </h3>
       </Link>
       <p className="text-sm text-muted-foreground mt-1">{article.summary}</p>
-      <p className="text-xs text-muted-foreground mt-2 font-medium">{article.author}</p>
     </div>
   )
 }
