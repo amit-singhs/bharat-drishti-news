@@ -16,7 +16,7 @@ export const dummyArticles: Article[] = [
     category: "राजनीति",
     headline: "व्हाइट हाउस के पास आईवीएफ देखभाल को अनिवार्य करने की कोई योजना नहीं, अभियान प्रतिज्ञा के बावजूद",
     summary: "पिछले साल, डोनाल्ड ट्रम्प ने कहा था कि यदि वे कार्यालय में लौटते हैं, तो सरकार बीमा कंपनियों को इसके इलाज को कवर करने के लिए नियम जारी करेगी।",
-    imageUrl: "https://images.unsplash.com/photo-1593113598332-cd288d6494a4?q=80&w=2070&auto=format&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1550531996-ff3dcede9477?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxEb25hbGQlMjBUcnVtcHxlbnwwfHx8fDE3NTQyNDUwNTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
     imageHint: "white house politics",
     author: "ऐलिस ओलस्टीन और मेगन विल्सन द्वारा",
     date: "25 जुलाई, 2024",
@@ -31,26 +31,29 @@ export const dummyArticles: Article[] = [
     imageHint: "stock market",
     author: "जॉन डो द्वारा",
     date: "25 जुलाई, 2024",
+    authorImage: "https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=2071&auto=format&fit=crop"
   },
   {
     id: "3",
     category: "राष्ट्रीय",
     headline: "कथित बाल यौन गिरोह पर तड़पते हुए, अलबामा समुदाय पूछता है: 'क्या किसी को पता नहीं था?'",
     summary: "प्रार्थना सभाओं और अन्य समारोहों में, काउंटी के निवासियों ने इस अहसास के साथ संघर्ष किया है कि उनके शहर में भयानक अपराध हो रहे होंगे।",
-    imageUrl: "https://images.unsplash.com/photo-1601625343465-3438870b4343?q=80&w=1932&auto=format&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxoYXBweSUyMGtpZHN8ZW58MHx8fHwxNzU0MjQ1MDg0fDA&ixlib=rb-4.1.0&q=80&w=1080",
     imageHint: "sad community",
     author: "एमिली बैक्सटर द्वारा",
     date: "25 जुलाई, 2024",
+    authorImage: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1976&auto=format&fit=crop"
   },
    {
     id: "4",
     category: "राजनीति",
     headline: "एक राष्ट्रपति अभियान के निर्णायक क्षण",
     summary: "टेलीविजन पर होने वाली बहसों से लेकर अक्टूबर के आश्चर्यजनक खुलासों तक, राष्ट्रपति चुनावों को आकार देने वाली प्रमुख घटनाओं पर एक नजर।",
-    imageUrl: "https://images.unsplash.com/photo-1628563658239-9a738550c64c?q=80&w=2070&auto=format&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1550531996-ff3dcede9477?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxEb25hbGQlMjBUcnVtcHxlbnwwfHx8fDE3NTQyNDUwNTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
     imageHint: "election debate",
     author: "राष्ट्रपति इतिहासकार द्वारा",
     date: "24 जुलाई, 2024",
+    authorImage: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1974&auto=format&fit=crop"
   },
   {
     id: "5",
@@ -145,7 +148,7 @@ export const dummyArticles: Article[] = [
     category: 'जलवायु',
     headline: 'शहर शहरी गर्मी द्वीपों का मुकाबला करने के लिए हरी छतों की ओर रुख कर रहे हैं',
     summary: 'छत के बगीचे और वनस्पति शहरों को ठंडा करने और तूफानी पानी का प्रबंधन करने में मदद कर रहे हैं।',
-    imageUrl: 'https://images.unsplash.com/photo-1572338302166-86f1e2bd34e4?q=80&w=1974&auto=format&fit=crop',
+    imageUrl: 'https://images.unsplash.com/photo-1694532297471-a6e2bb054c03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxncmVlbiUyMHJvb2Z0b3BzfGVufDB8fHx8MTc1NDI0NTEyM3ww&ixlib=rb-4.1.0&q=80&w=1080',
     imageHint: 'rooftop garden',
     author: 'मारिया गार्सिया द्वारा',
     date: '19 जुलाई, 2024',
@@ -214,7 +217,8 @@ export const dummyArticles: Article[] = [
     imageUrl: 'https://images.unsplash.com/photo-1552863779-1a59e58564a5?q=80&w=2070&auto=format&fit=crop',
     imageHint: 'amazon rainforest',
     author: 'कार्लोस सिल्वा',
-    date: '13 जुलाई, 2024'
+    date: '13 जुलाई, 2024',
+    authorImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop"
   },
   {
     id: '20',
@@ -224,7 +228,8 @@ export const dummyArticles: Article[] = [
     imageUrl: 'https://images.unsplash.com/photo-1549923019-ec45c3a388f4?q=80&w=2070&auto=format&fit=crop',
     imageHint: 'olympic torch',
     author: 'सोफी डबॉइस',
-    date: '12 जुलाई, 2024'
+    date: '12 जुलाई, 2024',
+    authorImage: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1974&auto=format&fit=crop"
   },
   {
     id: '21',
@@ -234,7 +239,8 @@ export const dummyArticles: Article[] = [
     imageUrl: 'https://images.unsplash.com/photo-1630766761899-4a973059954a?q=80&w=2070&auto=format&fit=crop',
     imageHint: 'galaxy stars',
     author: 'खगोल विज्ञान टुडे',
-    date: '11 जुलाई, 2024'
+    date: '11 जुलाई, 2024',
+    authorImage: "https://images.unsplash.com/photo-1542206395-9feb3edaa68d?q=80&w=1974&auto=format&fit=crop"
   },
   {
     id: '22',
@@ -244,7 +250,8 @@ export const dummyArticles: Article[] = [
     imageUrl: 'https://images.unsplash.com/photo-1518005244513-74a434b93757?q=80&w=1939&auto=format&fit=crop',
     imageHint: 'artisan pottery',
     author: 'कला और विरासत पत्रिका',
-    date: '10 जुलाई, 2024'
+    date: '10 जुलाई, 2024',
+    authorImage: "https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=2071&auto=format&fit=crop"
   },
   {
     id: '23',
@@ -254,7 +261,8 @@ export const dummyArticles: Article[] = [
     imageUrl: 'https://images.unsplash.com/photo-1504813182658-bdda04d2d4e2?q=80&w=2070&auto=format&fit=crop',
     imageHint: 'mental health awareness',
     author: 'स्वास्थ्य रिपोर्टर',
-    date: '9 जुलाई, 2024'
+    date: '9 जुलाई, 2024',
+    authorImage: "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=1978&auto=format&fit=crop"
   },
   {
     id: '24',
@@ -264,7 +272,8 @@ export const dummyArticles: Article[] = [
     imageUrl: 'https://images.unsplash.com/photo-1546410531-bb4ac63b9d6d?q=80&w=2070&auto=format&fit=crop',
     imageHint: 'online learning',
     author: 'एजुकेशन वीकली',
-    date: '8 जुलाई, 2024'
+    date: '8 जुलाई, 2024',
+    authorImage: "https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=2071&auto=format&fit=crop"
   },
   {
     id: '25',
@@ -274,7 +283,8 @@ export const dummyArticles: Article[] = [
     imageUrl: 'https://images.unsplash.com/photo-1527632911563-ee5b6d5344b6?q=80&w=1974&auto=format&fit=crop',
     imageHint: 'slow travel',
     author: 'यात्रा + आराम',
-    date: '7 जुलाई, 2024'
+    date: '7 जुलाई, 2024',
+    authorImage: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1976&auto=format&fit=crop"
   },
   {
     id: '26',
@@ -284,6 +294,7 @@ export const dummyArticles: Article[] = [
     imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=2070&auto=format&fit=crop',
     imageHint: 'plant-based meal',
     author: 'पोषण समाचार',
-    date: '6 जुलाई, 2024'
+    date: '6 जुलाई, 2024',
+    authorImage: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1974&auto=format&fit=crop"
   }
 ];
