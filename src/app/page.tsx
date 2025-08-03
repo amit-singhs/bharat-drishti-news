@@ -184,7 +184,7 @@ export default function Home() {
                 </div>
             </div>
             <aside>
-                <Card className="h-full">
+                <Card>
                     <CardContent className="p-4">
                         <h3 className="font-bold font-headline text-lg mb-3">शीर्ष 5</h3>
                         <ol className="list-decimal list-inside space-y-3">
