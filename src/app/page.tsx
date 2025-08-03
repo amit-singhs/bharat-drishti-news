@@ -76,18 +76,18 @@ export default function Home() {
 
           {/* Center Column */}
           <div className="col-span-12 md:col-span-6 mt-6 md:mt-0">
-            <Link href={`/article/${featuredArticle.id}`} className="block group">
+            <Link href={`/article/${featuredArticle.id}`} className="block group text-center">
               <Image
                 src={featuredArticle.imageUrl}
                 alt={featuredArticle.headline}
                 width={800}
-                height={500}
+                height={550}
                 className="w-full h-auto object-cover"
                 data-ai-hint={featuredArticle.imageHint}
                 priority
               />
-              <p className="text-xs text-muted-foreground mt-1">{featuredArticle.category}</p>
-              <h2 className="text-3xl font-headline font-black leading-tight mt-2 group-hover:underline">
+              <p className="text-xs text-muted-foreground mt-2">{featuredArticle.category}</p>
+              <h2 className="text-3xl font-headline font-black leading-tight mt-1 group-hover:underline">
                 {featuredArticle.headline}
               </h2>
             </Link>
